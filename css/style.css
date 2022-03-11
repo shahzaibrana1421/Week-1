@@ -110,6 +110,10 @@
   padding-bottom: 30px;
  }
 
+ .paddingchild {
+  padding-bottom: 4%;
+  }
+
 .childbox {
   width: 18rem;
   height: 10rem;
@@ -370,7 +374,7 @@ padding-bottom: 8px;
  }
 
 .num {
-  width: 200px;
+  width: 180px;
  }
 
 .icon {
