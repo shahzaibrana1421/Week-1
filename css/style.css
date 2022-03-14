@@ -2,6 +2,16 @@
   margin: 0;
  }
 
+.flexrow {
+  display: flex;
+  justify-content: center;
+  }
+
+.flexcoloumn {
+  display: flex;
+  flex-direction: column;
+ }
+
 .header {
   background-image: linear-gradient(to right, rgb(80, 60, 170) , rgb(187, 42, 155));
   height: 100vh;
@@ -12,8 +22,6 @@
  }
 
 .navbar {
-  display: flex;
-  justify-content: center;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 30px;
@@ -40,9 +48,7 @@
 
 .box {
   height: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
  }
 
 .box1 {
@@ -68,7 +74,6 @@
  }
 
 .div1 {
-  text-align: center;
   font-weight: bold;
   font-size: 26px;
   padding-top: 30px;
@@ -95,9 +100,7 @@
  }
 
 .parentbox {
-  display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 5%;
   margin-bottom: 3%;
  }
@@ -105,8 +108,6 @@
 .parentchild {
   margin-right: 5px;
   position: relative;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 30px;
  }
 
@@ -143,15 +144,13 @@
  }
 
 .button1 {
-border-radius: 17px;
-background: rgb(250, 19, 173);
-color: white;
-padding: 7px 15px;
+  border-radius: 17px;
+  background: rgb(250, 19, 173);
+  color: white;
+  padding: 7px 15px;
 }
 
 .divalign {
-  display: flex;
-  justify-content: center;
   position: absolute;
   left: 30%;
   top: 14%;
@@ -159,6 +158,7 @@ padding: 7px 15px;
   height: 68%;
   width: 45%;
  }
+
 .divalign1 {
   color: white;
   width: 90%;
@@ -169,8 +169,6 @@ padding: 7px 15px;
  }
 
 .divalign11 {
-  display: flex;
-  justify-content: center;
   padding-top: 4%;
  }
 
@@ -218,8 +216,6 @@ padding: 7px 15px;
  }
 
 .mawesome {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
  }
@@ -232,9 +228,7 @@ padding: 7px 15px;
  }
 
 .cnav {
-  display: flex;
   text-align: center;
-  justify-content: center;
   padding-top: 30px;
  }
 
@@ -245,15 +239,11 @@ padding: 7px 15px;
  }
 
 .pix {
-  display: flex; 
-  justify-content: center;
   padding-top: 30px;
   padding-bottom: 50px;
  }
 
 .pix1 {
-  display: flex; 
-  flex-direction: column;
   padding-right: 7px;
  }
 
@@ -276,8 +266,6 @@ padding: 7px 15px;
  }
 
 .koolr {
-  display: flex;
-  flex-direction: column;
   align-items: center;
  }
 
@@ -286,13 +274,9 @@ padding: 7px 15px;
   font-size: 2.5rem;
  }
 
-.koolr1 {
-  display: flex;
-  justify-content: center;  
- }
-
 .client {
   padding-right: 80px;
+  overflow: hidden;
  }
 
 .background4 {
@@ -306,16 +290,12 @@ padding: 7px 15px;
  }
 
 .whiteflex {
-  display: flex; 
-  justify-content: center; 
   color: black;
   padding-top: 6%;
   padding-bottom: 6%;
  }
 
 .forambox {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   width: 350px; 
   box-shadow: 0 4px 8px 0 rgba(110, 110, 110, 0.082), 0 6px 20px 0 rgba(65, 64, 64, 0.19);
@@ -323,8 +303,6 @@ padding: 7px 15px;
  }
 
 .aside  {
-  display: flex; 
-  flex-direction: column; 
   align-items: center;
  }
 
@@ -352,13 +330,10 @@ padding-bottom: 8px;
  }
 
 .footer {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  color: black;
+  color: white;
   justify-content: space-between;
   padding-bottom: 2%;
-  padding-top: -2%;
  }
 
 .button {
@@ -382,14 +357,10 @@ padding-bottom: 8px;
  }
 
 .footf {
-  display: flex;
-  justify-content: center;
   padding-top: 14px;
   padding-bottom: 14px;
 }
-.footf1 {
-  display: flex;
-  flex-direction: column;
+.footf1 { 
   align-items: center;
   padding-right: 30px;
  }
@@ -411,8 +382,6 @@ padding-bottom: 8px;
  }
 
 .lf1 {
-  display: flex;
-  justify-content: center;
   justify-content: baseline;
   justify-content: space-evenly;
  }
@@ -427,7 +396,7 @@ padding-bottom: 8px;
  }
 
 .lastp {
- padding-right: 10px;
+ padding-right: 32%;
  }
 
 .p {
@@ -439,6 +408,20 @@ padding-bottom: 8px;
   font-size: 2rem; 
   font-weight: 800;
  }
+
+ @media (max-width: 1245px) {
+ #hidediv1 {
+  display: none;
+ }
+
+}
+
+@media (max-width: 1230px) {
+#hidediv2 {
+  display: none;
+ }
+
+}
 
 @media (max-width: 1000px) {
 .divalign {
@@ -463,6 +446,13 @@ padding-bottom: 8px;
   flex-direction: column;
   align-items: center;
  }
+}
+
+@media (max-width: 830px) {
+#hidediv3 {
+  display: none;
+ }
+
 }
 
 @media (max-width: 700px) {
@@ -521,6 +511,17 @@ padding-bottom: 8px;
 .lf1 {
   padding-bottom: 12px;
  }
+}
+
+@media (max-width: 621px) {
+#hidediv5 {
+   display: none;
+  }
+ 
+#hidediv6 {
+    display: none;
+   }
+
 }
 
 @media (max-width: 350px) {
